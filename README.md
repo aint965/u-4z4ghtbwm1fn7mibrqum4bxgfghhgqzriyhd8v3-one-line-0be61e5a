@@ -8,6 +8,6 @@ A make.fun entry for [One Line, One Laugh](https://make.fun/bounty/u-4z4ghtbwm1f
 
 The line:
 
-> The self-checkout called me an 'unexpected item,' and honestly it's the first machine that's ever described me accurately.
+> The self-checkout called me an 'unexpected item' — the first machine to ever describe me accurately.
 
 `main.ts` (Node 22, standard library only, no dependencies, no network) writes the line deterministically — byte-identical on every run — to `$MAKEFUN_OUTPUT_DIR/entry.txt` (`/output/entry.txt` in the grading sandbox). `verify.mjs` checks the output against the gate: UTF-8, 1–140 characters, a single line, no trailing newline, not only whitespace.
